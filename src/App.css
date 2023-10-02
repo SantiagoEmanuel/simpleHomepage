@@ -149,6 +149,9 @@ main {
 .container {
     position: relative;
 }
+#menu-button {
+    color: black;
+}
 
 #menu{
     display: none;

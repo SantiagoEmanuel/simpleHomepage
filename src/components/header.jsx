@@ -32,9 +32,9 @@ export default function Header() {
                     <i id="sun2" className="bx bx-sun" ></i>
                 </button>
             </div>
-            <div className='menu-mobile'>
+            <div className='menu-mobile' >
                 <button onClick={() => showMenu()}>
-                    <i className='bx bx-menu'></i>
+                    <i id='menu-button' className='bx bx-menu'></i>
                 </button>
             </div>
         </header>
