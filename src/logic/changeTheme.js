@@ -22,6 +22,7 @@ function changeDarkTheme() {
     const selected2 = document.getElementById('selected2')
     const menu = document.getElementById('menu')
     const closeButton = document.getElementById('close')
+    const menuButton = document.getElementById('menu-button')
     body.style.background = '#111729'
     h1.style.color = '#ffff'
     text.style.color = '#ffff'
@@ -29,6 +30,7 @@ function changeDarkTheme() {
     selected2.style.color = '#fff'
     menu.style.backgroundColor = '#111729'
     closeButton.style.color = '#fff'
+    menuButton.style.color = '#fff'
 }
 
 function changeLightTheme() {
@@ -39,6 +41,7 @@ function changeLightTheme() {
     const selected2 = document.getElementById('selected2')
     const menu = document.getElementById('menu')
     const closeButton = document.getElementById('close')
+    const menuButton = document.getElementById('menu-button')
     body.style.background = '#fff'
     h1.style.color = '#223344'
     text.style.color = '#223344'
@@ -46,4 +49,5 @@ function changeLightTheme() {
     selected2.style.color = '#223344'
     menu.style.backgroundColor = '#fff'
     closeButton.style.color = '#000'
+    menuButton.style.color = '#fff'
 }
