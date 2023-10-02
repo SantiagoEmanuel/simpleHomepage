@@ -49,5 +49,5 @@ function changeLightTheme() {
     selected2.style.color = '#223344'
     menu.style.backgroundColor = '#fff'
     closeButton.style.color = '#000'
-    menuButton.style.color = '#fff'
+    menuButton.style.color = '#000'
 }
