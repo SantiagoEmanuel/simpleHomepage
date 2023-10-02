@@ -178,6 +178,9 @@ main {
     .homepage h2 {
         width: 470px;
     }
+    #menu{
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -209,6 +212,9 @@ main {
         background-color: transparent;
         font-weight: bold;
         font-size: 2rem;
+    }
+    #menu{
+        display: none;
     }
     #menu {
         width: 320px;
