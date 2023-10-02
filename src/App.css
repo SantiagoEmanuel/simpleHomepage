@@ -71,6 +71,7 @@ main {
     gap: 0rem;
     align-items:center;    
     padding: 75px 60px 0 70px;
+    justify-content: space-around;
 }
 .hero-image {
     width: 600px;
@@ -156,7 +157,6 @@ main {
 #menu{
     display: none;
 }
-
 
 @media (max-width: 1133px){
     header {
@@ -272,5 +272,27 @@ main {
         font-size: .875rem;
         display: flex;
         align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .hero-image {
+        width: 340px;
+    }
+    .homepage h1 {
+        font-size: 2.75rem;
+        width: 290px;
+    }
+    .homepage h2 {
+        width: 320px;
+        font-size: 1rem;
+    }
+    .btn-get-started{
+        padding: .4rem 0.8rem;
+    }
+    .btn-get-demo{
+        padding: .4rem 0.8rem;
+    }
+    .checks{
+        flex-direction: column;
     }
 }
