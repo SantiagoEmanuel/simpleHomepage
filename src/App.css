@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Constantes */
+.menu-mobile {
+    display: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 70px;
+}
+.navbar {
+    display: flex;
+    gap: 2rem;
+    align-items:center;
+    font-weight: bold;
+}
+.navbar li a {
+    color: #000;
+}
+
+.theme {
+    background-color: #223344;
+    color: #fff;
+    height: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 3px;
+    gap: 0.79rem;
+}
+.theme button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+.theme-selected{
+    border-radius: 100%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+}
+#no-selected {
+    color: #909193;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    gap: 0rem;
+    align-items:center;    
+    padding: 75px 60px 0 70px;
+}
+.hero-image {
+    width: 600px;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.2rem;
+    width: 500px;
+}
+
+.homepage h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #223344;
+    width: 400px;
+}
+.homepage h2 {
+    font-size: 1.18rem;
+    font-weight: 600;
+    color: #909193;
+}
+.homepage p {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #223344;
+}
+
+.btn-get-started {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    background-color: #2A4DD0;
+    color: #F2F9FE;
+    border-radius: 1rem;
+    border: none;
+    padding: .8rem 2rem;
+    cursor: pointer;
+}
+
+.btn-get-demo {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #2A4DD0;
+    border: none;
+    border-radius: 1rem;
+    padding: .8rem 2rem;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.checks {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.checks div {
+    display: flex;
+    align-items:center;
+    gap: .4rem;
+}
+.checks div i {
+    font-size: 1.5rem;
+    color: #4CA154;
+    padding-top: 5px;
+}
+.checks div p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #909193;
+}
+.container {
+    position: relative;
+}
+
+#menu{
+    display: none;
+}
+
+
+@media (max-width: 1133px){
+    header {
+        padding: 0 2rem;
+    }
+    main {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin-top: 60px;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+    .homepage {
+        width: 800px;
+    }
+    .homepage h1 {
+        width: 100%;
+    }
+    .homepage h2 {
+        width: 470px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        gap: 5rem;
+    }
+    .homepage{
+        width: 100%;
+        padding: 50px;
+    }
+    .homepage h1 {
+        width: 400px;
+    }
+    .hero-image{
+        width: 600px;
+        height: auto;
+    }
+    header nav {
+        display: none;
+    }
+    .theme {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-mobile button {
+        border: none;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    #menu {
+        width: 320px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #FFFFFF;
+        height: 100%;
+    }
+    .close-menu {
+        position: absolute;
+        top: 12px;
+        right: 26px;
+    }
+    .close-menu button {
+        font-size: 2.4rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-navbar {
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        display: flex;
+    }
+    .mobile-navbar ul {
+        gap: 20px;
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-navbar ul li a{
+        font-size: 3rem;
+        font-weight: 600;
+        color: #223344;
+    }
+    #mobile-theme{
+        width: 50px;
+        background: #223344;
+        color: #fff;
+        height: 1.5rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 0 3px;
+        gap: 0.79rem;
+    }
+    #mobile-theme button {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: .875rem;
+        display: flex;
+        align-items: center;
+    }
+}
